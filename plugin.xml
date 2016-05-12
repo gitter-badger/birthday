@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e107Plugin name="Birthday Menu" lan="BIRTHDAY_P05" version="3.0.1" date="2015-11-10" compatibility="2.0" installRequired="true" >
+	<author name="Barry Keal G4HDU" url="http://www.keal.me.uk" />
+	<summary>BIRTHDAY_P05</summary>
+	<description lan="BIRTHDAY_P04">Birthday Menu. Display members birthdays and send them a greeting on the day.</description>
+	<depends>
+	    <PHP name='core' min_version='5.2' />
+	    <MySQL name='server' min_version='5' />
+	    <plugin name='pchart' min_version='2.1' />
+    </depends>
+	<category>users</category>
+	<keywords>
+		<word>birthday</word>
+		<word>greeting</word>
+	</keywords>
+	<adminLinks>
+		<link url='admin_config.php' description='Configure Birthday Menu' icon='images/birthday_32.png' iconSmall='images/birthday_16.png' primary='true' >LAN_CONGIGURE</link>
+		<link url="admin_config.php?mode=options" description="Configure Birthday Menu Settings" icon="manage" >Birthday Menu Settings</link>
+	</adminLinks>
+
+	<pluginPrefs>
+		<pref name="birthday_numdue">3</pref>
+		<pref name="birthday_dformat">1</pref>
+		<pref name="sendEmail">0</pref>
+		<pref name="showAge">1</pref>
+		<pref name="linkUser">1</pref>
+		<pref name="birthday_subject">Happy Birthday</pref>
+		<pref name="birthday_emailfrom">sysop</pref>
+		<pref name="birthday_emailaddr">you@example.com</pref>
+		<pref name="birthday_greeting">Hi {NAME} Happy Birthday to you</pref>
+		<pref name="birthday_lastemail">0</pref>
+		<pref name="birthday_showclass">255</pref>
+		<pref name="birthday_includeclass">253</pref>
+		<pref name="birthday_excludeclass">255</pref>
+		<pref name="birthday_demographyclass">255</pref>
+		<pref name="birthday_sendpm">0</pref>
+		<pref name="birthday_pmfrom">0</pref>
+		<pref name="birthday_usecss">0</pref>
+		<pref name="showAvatar">1</pref>
+		<pref name="birthday_avwidth">25</pref>
+		<pref name="birthday_dayRun">-1</pref>
+	</pluginPrefs>
+	<userClasses>
+		<class name="BirthdayMenu" description="Birthday Menu View Class" />
+	</userClasses>
+	<extendedFields>
+	</extendedFields>
+</e107Plugin>
