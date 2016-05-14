@@ -49,3 +49,10 @@ Temporary Items
 birthday.intellisense.cache
 *.sln
 birthday.puo
+.idea/workspace.xml
+.idea/misc.xml
+.idea/birthday.iml
+.idea/dictionaries/Barry.xml
+.idea/modules.xml
+.idea/copyright/profiles_settings.xml
+.idea/vcs.xml
